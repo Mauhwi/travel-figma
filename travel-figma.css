@@ -324,6 +324,32 @@ img {
 
 /* Media */
 
+@media(min-width: 1200px) {
+    .travel-figma {
+        max-width: 1400px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .travel-figma {
+        max-width: 1024px;
+    }
+    .section1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .holiday-finder {
+        order: 2;
+    }
+    .section1 .img-container {
+        flex: 0 0 60%;
+    }
+    .section2, .section4 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media(max-width: 769px) {
     .travel-figma {
         min-width: 600px;
@@ -377,29 +403,10 @@ img {
     }
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 480px) {
     .travel-figma {
-        max-width: 1024px;
+        min-width: 320px;
+        max-width: 480px
     }
-    .section1 {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .holiday-finder {
-        order: 2;
-    }
-    .section1 .img-container {
-        flex: 0 0 60%;
-    }
-    .section2, .section4 {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media(min-width: 1200px) {
-    .travel-figma {
-        max-width: 1400px;
-    }
-}
+  }
 

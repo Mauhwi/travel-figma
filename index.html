@@ -3,8 +3,12 @@
 
 <head>
     <title>Tour and Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="travel-figma.js"></script>
 
     <link rel="stylesheet" type="text/css" href="travel-figma.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
@@ -15,24 +19,25 @@
     <div class="travel-figma">
         <header>
             <div class="icon">
+                <img src="icon.svg">
+            </div>
+
+            <div class="nav-icon" id="navAction">
+                <div></div>
+                <div></div>
                 <div></div>
             </div>
 
-            <div class="nav-panel">
+            <div class="nav-panel" id="nav-panel">
 
-                <a class="active">Home</a>
-                <a>Destinations</a>
-                <a>About</a>
-                <a>Partner</a>
-
-                <button id="login-button">Login</button>
-                <button id="register-button">Register</button>
-
-                <div class="nav-icon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+                <ul class="nav-links">
+                   <li><a class="active">Home</a></li> 
+                   <li><a>Destinations</a></li> 
+                   <li><a>About</a></li> 
+                   <li><a>Partner</a></li>
+                   <li><button id="login-button">Login</button></li>
+                   <li><button id="register-button">Register</button></li>
+                </ul>
             </div>
         </header>
         <div class="section1">
@@ -222,7 +227,7 @@
             <div class="footer-row">
                 <div class="footer-col">
                     <div class="icon">
-                        <div></div>
+                        <img src="icon.svg">
                     </div>
                     <p>Plan and book your perfect trip with 
                         expert advice, travel tips destination

@@ -6,6 +6,7 @@ window.onload=function(){
 
     navIcon.addEventListener("click", () => {
         navLinks.classList.toggle("open");
+        document.body.classList.toggle('lock-scroll');
         links.forEach(link => {
             link.classList.toggle("fade-in");
         })
